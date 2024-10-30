@@ -9,6 +9,11 @@ header {
     background: #005599; /* Darker shade of blue */
 }
 
+main {
+    padding: 40px; /* Increase padding to create more space */
+}
+
+
 nav ul li a:hover {
     text-decoration: underline;
 }
