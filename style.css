@@ -1,32 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #005599; /* Darker shade of blue */
-}
-
-main {
-    padding: 40px; /* Increase padding to create more space */
-}
-
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-header {
-    background: #0077cc;
+    background-color: #3b5998;  /* A nice blue color */
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
+nav {
+    margin: 15px 0;
+}
+
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -38,35 +35,90 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.header-title h1 {
+    margin: 10px 0 5px;
+}
+
+.header-title p {
+    font-size: 1.2em;
 }
 
 main {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 article {
-    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
-.read-more {
-    background: #28a745;
-    color: white;
-    padding: 10px;
+article h2 {
+    color: #3b5998;  /* Consistent color for article headings */
+}
+
+article a.read-more {
     text-decoration: none;
+    background-color: #3b5998;  /* A button appearance */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.read-more:hover {
-    background: #218838;
+article a.read-more:hover {
+    background-color: #334d84; /* Darken the button color on hover */
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
+    padding: 20px 0;
+    background-color: #3b5998;
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Styling for contact form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #334d84; 
 }
